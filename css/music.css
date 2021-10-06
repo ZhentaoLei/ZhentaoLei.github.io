@@ -1,0 +1,132 @@
+/*Todo: change color when cursor above*/
+/*Todo: change icon when hit pause*/
+/*change icon*/
+/**/
+@charset "utf-8";
+body {
+  background: url(../img/bodyback.jpg) no-repeat;
+  background-size: cover;
+}
+.banner {
+  position: relative;
+  background: url(../img/background.jpeg) no-repeat;
+  width: 800px;
+  height: 400px;
+  margin: 80px;
+  box-shadow: 8px 10px 10px 6px #333f4f;
+  opacity: 0.9;
+}
+
+.banner ul li {
+  list-style: none;
+  display: inline-block;
+  position: absolute;
+}
+
+/* round img */
+.banner ul li img {
+  border-radius: 30px;
+  cursor: url("../img/Bongo_Cat_Pointer.png"), pointer;
+}
+* {
+  cursor: url("../img/Bongo_Cat_Cursor.png"), pointer;
+}
+#p1 {
+  top: 50px;
+  left: 300px;
+}
+#p2 {
+  top: 230px;
+  left: 170px;
+}
+#p3 {
+  top: 190px;
+  left: 500px;
+}
+#p4 {
+  top: 0px;
+  left: 500px;
+}
+#p5 {
+  top: 250px;
+  left: 300px;
+}
+#p6 {
+  top: 50px;
+  left: 600px;
+}
+#p7 {
+  top: 50px;
+  left: 700px;
+}
+#p8 {
+  top: 150px;
+  left: 50px;
+}
+#p9 {
+  top: 50px;
+  left: 100px;
+}
+#p10 {
+  top: 280px;
+  left: 650px;
+}
+
+/*player section*/
+.music {
+  position: fixed;
+  left: 0px;
+  bottom: 30px;
+  width: 700px;
+  height: 100px;
+  opacity: 0.85;
+
+  background: rgb(36, 36, 36);
+}
+.music .music_img {
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 50px;
+  width: 50px;
+  float: left;
+}
+
+.music .song_name {
+  float: left;
+  color: whitesmoke;
+  font-size: 30px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+/* buttons*/
+.music .btn {
+  float: left;
+  position: absolute;
+  left: 500px;
+}
+.music .btn a {
+  float: left;
+  width: 40px;
+  height: 40px;
+  background: url(../img/icons.jpg);
+  margin-left: 20px;
+}
+.music .btn .player_prev {
+  background-position: -101px -37px;
+  background-size: 241px;
+}
+.music .btn .player_next {
+  background-position: -54px -37px;
+  background-size: 241px;
+}
+.music .btn .player_pause {
+  background-position: 232px -5px;
+  background-size: 241px;
+}
+
+.music .hide {
+  float: right;
+  background: black;
+}
