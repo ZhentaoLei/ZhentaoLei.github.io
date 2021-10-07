@@ -1,6 +1,5 @@
-/*Todo: change color when cursor above*/
-/*Todo: change icon when hit pause*/
-/*change icon*/
+/*Todo:add process bar*/
+/*Todo:add bungo cat */
 /**/
 @charset "utf-8";
 body {
@@ -99,7 +98,33 @@ body {
   color: whitesmoke;
   font-size: 30px;
   margin-left: 50px;
-  margin-top: 20px;
+  margin-top: 30px;
+}
+.slidecontainer {
+  width: 15%; /* Width of the outside container */
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 300px;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 7px;
+  border-radius: 5px;
+  background: #525050;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #04aa6d;
+  cursor: url("../img/Bongo_Cat_Pointer.png"), pointer;
 }
 
 /* buttons*/
@@ -114,6 +139,7 @@ body {
   height: 40px;
   background: url(../img/icons.jpg);
   margin-left: 20px;
+  margin-top: 30px;
 }
 .music .btn .player_prev {
   background-position: -101px -37px;
@@ -124,16 +150,18 @@ body {
   background-size: 241px;
 }
 .music .btn .player_pause {
-  background-position: 232px -5px;
+  background-position: 187px -5px;
   background-size: 241px;
 }
 .music .btn .player_continue {
-  background-position: 187px -5px;
+  background-position: 232px -5px;
   background-size: 241px;
 }
 .music .hide {
   float: right;
   background: black;
+  width: 10px;
+  height: inherit;
 }
 @keyframes spin {
   from {
