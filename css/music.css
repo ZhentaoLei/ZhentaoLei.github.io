@@ -14,18 +14,20 @@ body {
   height: 400px;
   margin: 80px;
   box-shadow: 8px 10px 10px 6px #333f4f;
-  opacity: 0.9;
+  opacity: 0.6;
 }
 
 .banner ul li {
   list-style: none;
   display: inline-block;
   position: absolute;
+  opacity: 1;
 }
 
 /* round img */
 .banner ul li img {
   border-radius: 30px;
+
   cursor: url("../img/Bongo_Cat_Pointer.png"), pointer;
 }
 * {
@@ -83,12 +85,12 @@ body {
 
   background: rgb(36, 36, 36);
 }
-.music .music_img {
+.music .music_img img {
   border-radius: 50%;
   margin-top: 10px;
   margin-left: 10px;
-  height: 50px;
-  width: 50px;
+  height: 80px;
+  width: 80px;
   float: left;
 }
 
@@ -125,8 +127,22 @@ body {
   background-position: 232px -5px;
   background-size: 241px;
 }
-
+.music .btn .player_continue {
+  background-position: 187px -5px;
+  background-size: 241px;
+}
 .music .hide {
   float: right;
   background: black;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.music .music_img .spin {
+  animation: spin 5s infinite linear;
 }
